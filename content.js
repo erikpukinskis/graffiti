@@ -12,7 +12,6 @@ function addText() {
   const input = document.createElement("input")
   input.setAttribute("placeholder", "empty")
   input.setAttribute("value", "Text")
-  input.setAttribute("size", "10")
 
   Object.entries({
     "position": "absolute",
@@ -25,6 +24,7 @@ function addText() {
     "border": "none",
     "border-radius": "2px",
     "background-color": "transparent",
+    "width": "300px",
   }).forEach(([key, value]) => input.style[key] = value)
   body.appendChild(input)
 
