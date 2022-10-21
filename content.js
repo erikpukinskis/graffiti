@@ -9,14 +9,14 @@ chrome.runtime.onMessage.addListener(
 function addText() {
   const body = document.querySelector("body");
   if (!body) return
-  const input = document.createElement("input")
+  const input = document.createElement("textarea")
   input.setAttribute("placeholder", "empty")
-  input.setAttribute("value", "Text")
+  input.innerText = "text"
 
   Object.entries({
     "position": "absolute",
     "top": "100px",
-    "right": "100px",
+    "left": "100px",
     "font-size": "32px",
     "font-family": "Arial Rounded MT Bold, Arial Rounded, Arial Rounded MT, ui-rounded",
     "font-weight": "bold",
